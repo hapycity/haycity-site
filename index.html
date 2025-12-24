@@ -4,24 +4,93 @@
   <meta charset="UTF-8">
   <title>هَپی سیتی | تم تولد و دکور</title>
   <style>
-    body { margin:0; font-family:Tahoma, sans-serif; background:#fff; color:#333; font-size:18px; }
-    header { background:#d63384; color:#fff; padding:20px; text-align:center; font-size:32px; font-weight:bold; }
-    .hero { padding:40px; text-align:center; font-size:24px; color:#d63384; }
-    .gallery { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; padding:20px; }
-    .gallery img { width:100%; height:auto; border-radius:10px; }
-    footer { background:#000; color:#fff; padding:15px; position:relative; }
-    .address { position:absolute; right:20px; bottom:15px; font-size:16px; }
+    body {
+      margin:0;
+      font-family:Tahoma, sans-serif;
+      background: linear-gradient(to bottom right, #001f3f, #87ceeb);
+      color:#fff;
+      font-size:18px;
+    }
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      color:#fff;
+      font-size:28px;
+      font-weight:bold;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                   -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .logo {
+      width:80px;
+      height:auto;
+    }
+    .center-title {
+      text-align:center;
+      flex:1;
+      font-family:Comic Sans MS, cursive, sans-serif;
+    }
+    .sub-info {
+      font-size:16px;
+      margin-top:5px;
+    }
+    .gallery {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:15px;
+      padding:20px;
+    }
+    .gallery img {
+      width:100%;
+      height:auto;
+      border-radius:10px;
+    }
+    .map-section {
+      padding:20px;
+      text-align:center;
+    }
+    .map-section h2 {
+      margin-bottom:10px;
+    }
+    footer {
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:15px;
+      position:relative;
+    }
+    .address {
+      font-size:16px;
+    }
   </style>
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById("datetime").innerText =
+        now.toLocaleDateString('fa-IR') + " | " + now.toLocaleTimeString('fa-IR');
+    }
+    setInterval(updateDateTime, 1000);
+  </script>
 </head>
-<body>
+<body onload="updateDateTime()">
+
   <header>
-    هَپی سیتی | تم تولد
+    <!-- سمت راست لوگو -->
+    <img src="happy-city-.jpg" alt="لوگو هَپی سیتی" class="logo">
+
+    <!-- وسط عنوان -->
+    <div class="center-title">
+      تم تولد هَپی سیتی
+      <div class="sub-info">🎈 خوش آمدید | 📞 09366603773</div>
+    </div>
+
+    <!-- سمت چپ تاریخ و ساعت -->
+    <div id="datetime"></div>
   </header>
 
-  <section class="hero">
-    فروشگاه تخصصی دکورهای خاص از تولد تا عروسی
-  </section>
-
+  <!-- گالری عکس‌ها -->
   <section class="gallery">
     <img src="IMG_20251224_172637.jpg" alt="نمونه کار ۱">
     <img src="IMG_20251224_172716.jpg" alt="نمونه کار ۲">
@@ -29,10 +98,19 @@
     <img src="IMG_20251224_173158.jpg" alt="نمونه کار ۴">
   </section>
 
-  <footer>
-    📞 09366603773 
+  <!-- بخش نقشه -->
+  <section class="map-section">
+    <h2>آدرس و نمونه کار</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.2442710458677!2d54.97723990000001!3d36.427475699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f9d0fcb6fc6a577%3A0x51b587dc8022f60f!2sHappycity!5e0!3m2!1sen!2s!4v1766607917194!5m2!1sen!2s" 
+      width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
     <div class="address">📍 شاهرود، بلوار آزادی، نبش کوچه ۲۱</div>
-    <br>© 2025 Happy City
+  </section>
+
+  <footer>
+    © 2025 Happy City
   </footer>
+
 </body>
 </html>
