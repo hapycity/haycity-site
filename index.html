@@ -10,13 +10,17 @@
       background: linear-gradient(to bottom right, #001f3f, #87ceeb);
       color:#fff;
       font-size:18px;
+      padding-bottom:60px; /* جا برای فوتر ثابت */
     }
     header {
       display:flex;
       justify-content:space-between;
       align-items:center;
       padding:15px;
-      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      /* رنگین‌کمان کمرنگ‌تر */
+      background: linear-gradient(90deg,
+        rgba(255,0,0,0.4), rgba(255,165,0,0.4), rgba(255,255,0,0.4),
+        rgba(0,128,0,0.4), rgba(0,0,255,0.4), rgba(75,0,130,0.4), rgba(238,130,238,0.4));
       color:#fff;
       font-size:28px;
       font-weight:bold;
@@ -55,11 +59,14 @@
       margin-bottom:10px;
     }
     footer {
-      background:#000;
+      background:#001f3f; /* سرمه‌ای */
       color:#fff;
       text-align:center;
       padding:15px;
-      position:relative;
+      position:fixed;   /* همیشه پایین صفحه */
+      bottom:0;
+      left:0;
+      width:100%;
     }
     .address {
       font-size:16px;
