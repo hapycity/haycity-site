@@ -1,265 +1,224 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>هپی سیتی | تم تولد شاهرود</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- آیکون‌ها -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>هَپی سیتی | دکور تولد و جشن‌ها در شاهرود</title>
 
-  <style>
+<meta name="description" content="هَپی سیتی مرکز تخصصی دکور تولد، بادکنک‌آرایی، تم جشن و طراحی رویداد در شاهرود. سفارش فوری، کیفیت بالا، قیمت مناسب.">
+<meta name="keywords" content="هَپی سیتی, دکور تولد شاهرود, بادکنک آرایی شاهرود, تم تولد, دکور جشن, Happy City">
+
+<!-- فونت فارسی -->
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
     body {
-      margin: 0;
-      font-family: 'Vazirmatn', sans-serif;
-      direction: rtl;
-      background: #fff;
+        font-family: 'Vazirmatn', sans-serif;
+        background: #fff7fb;
+        margin: 0;
+        padding: 0;
+        color: #333;
     }
 
-    /* بنرهای بالای صفحه */
-    .banner {
-      width: 92%;
-      border-radius: 15px;
-      overflow: hidden;
-      margin: 15px auto;
-      position: relative;
+    header {
+        background: linear-gradient(135deg, #ff9ad5, #ff6ac4);
+        padding: 20px;
+        text-align: center;
+        color: white;
+        border-bottom: 4px solid #ff3fae;
     }
 
-    .banner img {
-      width: 100%;
-      display: block;
+    header img {
+        width: 120px;
+        border-radius: 12px;
     }
 
-    .banner-text {
-      position: absolute;
-      bottom: 15px;
-      right: 15px;
-      background: rgba(0,0,0,0.45);
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: bold;
+    h1 {
+        margin-top: 10px;
+        font-size: 26px;
+        font-weight: 600;
     }
 
-    .banner-btn {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      background: #ff4081;
-      color: #fff;
-      padding: 8px 15px;
-      border-radius: 20px;
-      font-size: 14px;
-      text-decoration: none;
-      font-weight: bold;
+    .section-title {
+        font-size: 22px;
+        margin: 25px 0 10px;
+        color: #ff3fae;
+        text-align: center;
+        font-weight: bold;
     }
 
-    /* گالری کارت‌محور */
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 15px;
-      padding: 20px;
-      margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
     }
 
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
+    .gallery img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px #00000022;
     }
 
-    .card img {
-      width: 100%;
-      height: auto;
+    .caption {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #444;
     }
 
-    .card h3 {
-      margin: 10px;
-      font-size: 15px;
-      color: #0057b8;
+    .contact-box {
+        background: #ffe3f4;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px #00000022;
     }
 
-    /* متن SEO */
-    .seo-text {
-      padding: 20px;
-      background: #f9f9f9;
-      margin: 20px;
-      border-radius: 10px;
-      line-height: 1.8;
+    .contact-box p {
+        margin: 8px 0;
+        font-size: 16px;
     }
 
-    /* فوتر */
+    .icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .icons a {
+        background: #ff3fae;
+        color: white;
+        padding: 12px 14px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 20px;
+        box-shadow: 0 4px 10px #00000033;
+    }
+
     footer {
-      background: #eee;
-      padding: 20px;
-      margin-bottom: 60px;
+        background: #ff6ac4;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+        font-size: 14px;
     }
 
-    .map-container {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+    iframe {
+        width: 100%;
+        height: 250px;
+        border: none;
+        border-radius: 12px;
+        margin-top: 10px;
     }
-
-    /* نوار پایین صفحه */
-    .bottom-bar {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background: #fff;
-      border-top: 1px solid #ccc;
-      display: flex;
-      justify-content: space-around;
-      padding: 8px 0;
-      z-index: 100;
-    }
-
-    .bar-item {
-      text-align: center;
-      color: #0057b8;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .bar-item i {
-      font-size: 20px;
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    /* دکمه‌های شناور */
-    .floating-buttons {
-      position: fixed;
-      bottom: 90px;
-      right: 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      z-index: 200;
-    }
-
-    .float-btn {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 22px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    }
-
-    .whatsapp { background: #25D366; }
-    .call { background: #007bff; }
-    .instagram {
-      background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <!-- بنر 1 -->
-  <div class="banner">
-    <img src="banner1.jpg" alt="بنر تم تولد">
-    <div class="banner-text">تم تولد هپی سیتی</div>
-    <a href="#gallery" class="banner-btn">مشاهده</a>
-  </div>
+<header>
+    <img src="image/Screenshot_2025-12-25-19-51-41-809_com.android.chrome.jpg" alt="لوگوی هَپی سیتی">
+    <h1>هَپی سیتی | مرکز تخصصی دکور تولد و جشن‌ها</h1>
+</header>
 
-  <!-- بنر 2 -->
-  <div class="banner">
-    <img src="banner2.jpg" alt="بنر بادکنک آرایی">
-    <div class="banner-text">بادکنک‌آرایی شاهرود</div>
-    <a href="tel:09366603773" class="banner-btn">تماس</a>
-  </div>
+<div class="section-title">گالری نمونه‌کارهای هَپی سیتی</div>
 
-  <!-- گالری -->
-  <section id="gallery" class="gallery">
+<div class="gallery">
 
-    <div class="card">
-      <img src="IMG_20251224_172637.jpg">
-      <h3>تم پری دریایی</h3>
+    <div>
+        <img src="image/IMG_20251224_172716.jpg">
+        <div class="caption">دکور تولد دخترانه – هَپی سیتی</div>
     </div>
 
-    <div class="card">
-      <img src="img2.jpg">
-      <h3>بادکنک آرایی لوکس</h3>
+    <div>
+        <img src="image/IMG_20251112_140327.jpg">
+        <div class="caption">بادکنک‌آرایی حرفه‌ای – هَپی سیتی</div>
     </div>
 
-    <div class="card">
-      <img src="img3.jpg">
-      <h3>تم سنریو</h3>
+    <div>
+        <img src="image/IMG_20251112_192340.jpg">
+        <div class="caption">تم تولد خاص – هَپی سیتی</div>
     </div>
 
-    <div class="card">
-      <img src="img4.jpg">
-      <h3>تم دایناسور</h3>
+    <div>
+        <img src="image/IMG_20251224_172637.jpg">
+        <div class="caption">دکور جشن کودک – هَپی سیتی</div>
     </div>
 
-  </section>
-
-  <!-- متن SEO -->
-  <section class="seo-text">
-    <h2>تم تولد هپی سیتی</h2>
-    <p>
-      فروشگاه <strong>هپی سیتی</strong> در شاهرود با تخصص در 
-      <strong>بادکنک‌آرایی شاهرود</strong> و 
-      <strong>دکور تولد شاهرود</strong> آماده است تا زیباترین 
-      <strong>ساخت دکور تولد</strong> را برای جشن‌های شما طراحی کند.
-    </p>
-    <p>
-      برای دیدن نمونه‌کارهای بیشتر:  
-      <a href="https://instagram.com/happycity.ir" target="_blank">اینستاگرام هپی سیتی</a>
-    </p>
-    <p>شماره تماس: <strong>09366603773</strong></p>
-  </section>
-
-  <!-- نقشه -->
-  <footer>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=..." width="200" height="150" style="border:0;" loading="lazy"></iframe>
-      <div>
-        <h3>هپی سیتی</h3>
-        <p>فروشگاه تم تولد شاهرود</p>
-      </div>
+    <div>
+        <img src="image/IMG_20251224_173158.jpg">
+        <div class="caption">چیدمان تولد شیک – هَپی سیتی</div>
     </div>
-  </footer>
 
-  <!-- نوار پایین صفحه -->
-  <div class="bottom-bar">
-    <a href="#gallery" class="bar-item">
-      <i class="fas fa-store"></i>
-      فروشگاه
-    </a>
-    <a href="#" class="bar-item">
-      <i class="fas fa-heart"></i>
-      علاقه‌مندی
-    </a>
-  </div>
+    <div>
+        <img src="image/IMG_20251224_172805.jpg">
+        <div class="caption">بادکنک‌آرایی مناسبتی – هَپی سیتی</div>
+    </div>
 
-  <!-- دکمه‌های شناور -->
-  <div class="floating-buttons">
+    <div>
+        <img src="image/IMG_20251225_190039.jpg">
+        <div class="caption">دکور جشن لاکچری – هَپی سیتی</div>
+    </div>
 
-    <a href="https://wa.me/989366603773" class="float-btn whatsapp" target="_blank">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+    <div>
+        <img src="image/IMG_20251225_190916.jpg">
+        <div class="caption">تم تولد پسرانه – هَپی سیتی</div>
+    </div>
 
-    <a href="tel:09366603773" class="float-btn call">
-      <i class="fas fa-phone"></i>
-    </a>
+    <div>
+        <img src="image/IMG_20251225_190938.jpg">
+        <div class="caption">چیدمان حرفه‌ای جشن – هَپی سیتی</div>
+    </div>
 
-    <a href="https://instagram.com/happycity.ir" class="float-btn instagram" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
+    <div>
+        <img src="image/IMG_20251225_192219.jpg">
+        <div class="caption">دکوراسیون تولد – هَپی سیتی</div>
+    </div>
 
-  </div>
+    <div>
+        <img src="image/Screenshot_2025-12-25-19-26-44-244_com.miui.gallery-edit.jpg">
+        <div class="caption">نمونه کار جشن – هَپی سیتی</div>
+    </div>
+
+    <div>
+        <img src="image/Screenshot_2025-12-25-19-27-30-806_com.miui.gallery-edit.jpg">
+        <div class="caption">دکور تولد کودک – هَپی سیتی</div>
+    </div>
+
+    <div>
+        <img src="image/Screenshot_2025-12-25-19-28-05-585_com.miui.gallery-edit.jpg">
+        <div class="caption">تم جشن تولد – هَپی سیتی</div>
+    </div>
+
+</div>
+
+<div class="section-title">تماس با هَپی سیتی</div>
+
+<div class="contact-box">
+    <p><strong>شماره تماس:</strong> 09366603773</p>
+    <p><strong>واتساپ:</strong> <a href="https://wa.me/989366603773" target="_blank">ارتباط در واتساپ</a></p>
+    <p><strong>تلگرام:</strong> <a href="https://t.me/HappyCity" target="_blank">کانال تلگرام</a></p>
+    <p><strong>ایتا:</strong> <a href="https://eitaa.com/HappyCity" target="_blank">صفحه ایتا</a></p>
+    <p><strong>آدرس:</strong> شاهرود، بلوار آزادی، نبش کوچه ۲۱</p>
+    <p><strong>اینستاگرام:</strong> <a href="https://instagram.com/hapycity" target="_blank">@hapycity</a></p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.123!2d55.001!3d36.418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8f9f!2z2KfZhNin2YbYp9mGINmF2KfZhNmF!5e0!3m2!1sen!2s!4v000000"></iframe>
+</div>
+
+<div class="icons">
+    <a href="tel:09366603773">📞</a>
+    <a href="https://wa.me/989366603773">💬</a>
+    <a href="https://instagram.com/hapycity">📸</a>
+</div>
+
+<footer>
+    طراحی شده توسط هَپی سیتی – مرکز تخصصی دکور تولد و جشن‌ها  
+</footer>
 
 </body>
 </html>
