@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -34,7 +33,7 @@
 
     section {
         padding: 20px;
-        max-width: 700px;
+        max-width: 800px;
         margin: auto;
     }
 
@@ -73,6 +72,23 @@
         border-radius: 50%;
         text-decoration: none;
         font-size: 20px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
     }
 
     footer {
@@ -121,6 +137,16 @@
         <p><strong>ایتا:</strong> <a href="https://eitaa.com/Hpycty" target="_blank">@Hpycty</a></p>
         <p><strong>اینستاگرام:</strong> <a href="https://instagram.com/happycity.ir" target="_blank">@happycity.ir</a></p>
         <p><strong>آدرس:</strong> شاهرود، بلوار آزادی، نبش کوچه ۲۱</p>
+    </div>
+</section>
+
+<section>
+    <h2>نمونه‌کارهای دیزاین هپی سیتی</h2>
+    <div class="gallery">
+        <img src="image/design1.jpg" alt="دیزاین تولد ۱">
+        <img src="image/design2.jpg" alt="دیزاین تولد ۲">
+        <img src="image/design3.jpg" alt="دیزاین تولد ۳">
+        <img src="image/design4.jpg" alt="دیزاین تولد ۴">
     </div>
 </section>
 
